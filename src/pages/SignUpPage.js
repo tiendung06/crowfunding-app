@@ -80,7 +80,7 @@ const SignUpPage = () => {
             control={control}
             name="password"
             type={`${showPassword ? "text" : "password"}`}
-            placeholder="example@gmail.com"
+            placeholder="Enter password"
             error={errors.password?.message}
           >
             <IconEyeToggle
