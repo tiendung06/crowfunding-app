@@ -1,15 +1,15 @@
-import { Button } from "components/button";
 import React from "react";
-import { Link } from "react-router-dom";
-import DashboardFund from "./DashboardFund";
 import DashboardSearch from "./DashboardSearch";
+import DashboardFund from "./DashboardFund";
+import { Link } from "react-router-dom";
+import { Button } from "components/button";
 
 const DashboardTopbar = () => {
   return (
     <div className="flex items-center justify-between mb-8">
       <div className="flex items-center flex-1 gap-x-10">
         <Link to="/" className="inline-block">
-          <img src="logo.svg" alt="bg" />
+          <img src="/logo.svg" alt="bg" />
         </Link>
         <div className="max-w-[458px] w-full">
           <DashboardSearch></DashboardSearch>
@@ -25,7 +25,7 @@ const DashboardTopbar = () => {
         >
           Start a campaign
         </Button>
-        <img src="logo.svg" alt="bg" className="object-cover rounded-full" />
+        <img src="/logo.svg" alt="bg" className="object-cover rounded-full" />
       </div>
     </div>
   );
